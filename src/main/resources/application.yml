@@ -28,7 +28,7 @@ easy-es:
   ######## 拓展配置2: 可缺省,不影响项目启动,若缺省则为默认值
   banner: false # 默认为true 打印banner 若您不期望打印banner,可配置为false
   global-config:
-    process_index_mode: smoothly #索引处理模式,smoothly:平滑模式,默认开启此模式, not_smoothly:非平滑模式, manual:手动模式
+    process_index_mode: smoothly # 索引处理模式,smoothly:平滑模式,默认开启此模式, not_smoothly:非平滑模式, manual:手动模式
     print-dsl: true # 开启控制台打印通过本框架生成的DSL语句,默认为开启,测试稳定后的生产环境建议关闭,以提升少量性能
     distributed: false # 当前项目是否分布式项目,默认为true,在非手动托管索引模式下,若为分布式项目则会获取分布式锁,非分布式项目只需synchronized锁.
     asyncProcessIndexBlocking: true # 异步处理索引是否阻塞主线程 默认阻塞 数据量过大时调整为非阻塞异步进行 项目启动更快
